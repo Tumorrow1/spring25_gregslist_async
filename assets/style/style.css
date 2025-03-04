@@ -45,3 +45,9 @@ input {
 .creator-img {
   max-height: 3em;
 }
+
+.house-boarder {
+  border-width: thick;
+  border-style: solid;
+  border-color: black;
+}

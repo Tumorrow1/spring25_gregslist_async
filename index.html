@@ -24,6 +24,55 @@
 
   <main>
 
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h1>Houses</h1>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-7">
+        <div class="bg-light shadow rounded p-3">
+          <form onsubmit="app.housesController.createHouseListing()">
+            <div class="mb-3">
+              <label for="houseYear">House Year</label>
+              <input id="houseYear" name="year" type="number" required min="1776" max="2025" placeholder="2024">
+            </div>
+            <div class="mb-3">
+              <label for="houseBedroom">Bedrooms</label>
+              <input id="houseBedroom" name="bedroom" type="number" required min="0" max="100" placeholder="0">
+            </div>
+            <div class="mb-3">
+              <label for="houseBathroom">Bathrooms</label>
+              <input id="houseBathroom" name="Bathrooms" type="number" required min="0" max="100" placeholder="0">
+            </div>
+            <div class="mb-3">
+              <label for="houseLevels">Levels</label>
+              <input id="houseLevels" name="Levels" type="number" required min="0" max="33" placeholder="0">
+            </div>
+            <div class="mb-3">
+              <label for="houseImg">House Img Url</label>
+              <input id="houseImgUrl" name="ImgUrl" type="string" required max="500" placeholder="ImgUrl">
+            </div>
+            <div class="mb-3">
+              <label for="houseDescription">House Description</label>
+              <textarea name="description" id="houseDescription" class="w-100" placeholder="Description of the car..."
+                maxlength="500"></textarea>
+            </div>
+            <div class="text-end">
+              <button class="btn btn-outline-danger me-2" type="reset">
+                Reset Form
+              </button>
+              <button class="btn btn-outline-dark" type="submit">
+                Submit
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
     <!-- TODO put houses container here! -->
 
     <div class="container">
@@ -105,6 +154,33 @@
 
           </div>
         </div>
+      </div>
+      <div class="col-12" id="houseListings">
+        <!-- <div class="row bg-light shadow house-boarder mb-1">
+          <div class="col-md-4">
+            <img
+              src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=1750&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="poolhouse" class="img-fluid">
+          </div>
+          <div class="col-md-8">
+            <div class="d-flex flex-column justify-content-between h-100">
+              <div>
+                <p class="fs-3 mb-1">1990 poolhouse</p>
+                <small>listed on 12/32/2002</small>
+                <div class="d-flex mt-1 justify-content-between align-items-center">
+                  <p class="fs-3">$10000</p>
+                  <p class="fs-4">Bedrooms</p>
+                  <p class="fs-4">bathrooms</p>
+                </div>
+                <div>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dicta fuga modi aspernatur quam
+                    veritatis assumenda doloremque in. Aut, quidem magnam. Neque architecto tempora vero nam fuga rerum
+                    pariatur cum.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> -->
       </div>
       <div id="carListings" class="row">
         <!-- STUB car card -->
